@@ -24,8 +24,8 @@ export default class GameOver extends Phaser.State {
                      '\n' + 'Kaupungin koko: ' + this.population)
     name = prompt('Kerro nimesi tuloksia varten')
     submitScore(name, score)
-    this.menu.createButton('Jatka', () => { this.state.start('Start') })
     this.menu.createButton('Tulokset', () => { this.state.start('Highscores') })
+    this.menu.createButton('Alkuun', () => { this.state.start('Start') })
     this.menu.finishMenu()
 
   }

@@ -7,7 +7,6 @@ export class Highscores extends Phaser.State {
     this.menu = new MenuBuilder(this, 'start', this.camera.height / 4)
     this.menu.createTitle('Tulokset')
     var scores = utils.highscores.getScores()
-    var fmt = ''
     scores.forEach((val, i) => {
       fmt += i + ': ' + val.name + ' - ' + val.score + '\n'
     })

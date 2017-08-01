@@ -23,8 +23,7 @@ export default {
       var xhr = new XMLHttpRequest()
       xhr.open('GET', config.highscoreURL, 'scores', true)
       xhr.setRequestHeader('Content-Type', 'application/json')
-      xhr.send()
-      scores = xhr.response
+      var scores = xhr.send()
     },
 
     /**
