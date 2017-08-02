@@ -26,8 +26,8 @@ export default {
 
   // configurations for map
   mapSize: {
-    width: 18, // NOTE TO CHANGER! VALUES UNDER 12 BUG THE MAP!
-    height: 18 // THIS TOO
+    width: 64, // NOTE TO CHANGER! VALUES UNDER 12 BUG THE MAP!
+    height: 64 // THIS TOO
   },
   noise: {
     freqs: {
@@ -103,8 +103,12 @@ export default {
   fontFill: '#ffff00',
 
   // player
+<<<<<<< HEAD
   playerInitialCash: 200000,
 
   // highscores
   highscoreURL: ''
+=======
+  playerInitialCash: 20000
+>>>>>>> 9a57b9c5ed0f03bd7725c03d5e59552893292df6
 }
