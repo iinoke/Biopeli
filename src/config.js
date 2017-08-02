@@ -103,12 +103,5 @@ export default {
   fontFill: '#ffff00',
 
   // player
-<<<<<<< HEAD
-  playerInitialCash: 200000,
-
-  // highscores
-  highscoreURL: ''
-=======
   playerInitialCash: 20000
->>>>>>> 9a57b9c5ed0f03bd7725c03d5e59552893292df6
 }
