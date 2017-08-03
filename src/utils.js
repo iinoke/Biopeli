@@ -19,7 +19,7 @@ export default {
      * Fetches the top 10 scores
      * @return {{name: string, score: number}[]}
      */
-    getScores: () => {
+    getScores: () => { // I HAVE NO IDEA IF THIS WORKS IN ANY WAY
       var xhr = new XMLHttpRequest()
       xhr.open('GET', config.highscoreURL, 'scores', true)
       xhr.setRequestHeader('Content-Type', 'application/json')
@@ -31,7 +31,7 @@ export default {
      * @param {string} name 
      * @param {number} score 
      */
-    submitScore: (score, name) => {
+    submitScore: (score, name) => { // SAME WITH THIS
       var xhr = new XMLHttpRequest()
       xhr.open('POST', config.highscoreURL + '/submit_score', true)
       xhr.setRequestHeader('Content-Type', 'application/json')
