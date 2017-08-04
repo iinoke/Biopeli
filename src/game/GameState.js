@@ -253,7 +253,13 @@ export default class GameState {
         buttonHeight: config.menuButtonHeight,
         buttonWidth: config.menuButtonWidth
       }),
-      contents: [this.cityContent, this.tileContent, this.buildStructureController, this.optionsContent, this.layersContent]
+      contents: [
+        this.cityContent, 
+        this.tileContent, 
+        this.buildStructureController, 
+        this.optionsContent, 
+        this.layersContent
+      ]
     })
 
     this.bottomController = new SingleController({

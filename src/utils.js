@@ -1,3 +1,5 @@
+import config from './config'
+
 /**
  * Utility functions
  */
@@ -24,6 +26,7 @@ export default {
       xhr.open('GET', config.highscoreURL, 'scores', true)
       xhr.setRequestHeader('Content-Type', 'application/json')
       var scores = xhr.send()
+      return scores
     },
 
     /**

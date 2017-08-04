@@ -8,7 +8,7 @@ import GameState from './states/Play'
 import GameOverState from './states/GameOver'
 import StartState from './states/Start'
 import InstructionsState from './states/Instructions'
-import HighscoresState from '.states/Highscores'
+import HighscoresState from './states/Highscores'
 import config from './config'
 
 /**

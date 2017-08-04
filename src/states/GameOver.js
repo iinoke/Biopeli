@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
 import MenuBuilder from '../controllers/menucontrol/MenuBuilder'
-import {submitScore} from '../highscores'
+import utils from '../utils'
 
 /**
  * Game over screen
@@ -22,11 +22,10 @@ export default class GameOver extends Phaser.State {
     this.stage.backgroundColor = 0x000000
     this.menu.createScore('Loppupisteesi: ' + this.points.toFixed(0) +
                      '\n' + 'Kaupungin koko: ' + this.population)
-    name = prompt('Kerro nimesi tuloksia varten')
-    submitScore(name, score)
+    var name = prompt('Kerro nimesi tuloksia varten')
+    utils.highscores.submitScore(name, this.score)
     this.menu.createButton('Tulokset', () => { this.state.start('Highscores') })
     this.menu.createButton('Alkuun', () => { this.state.start('Start') })
     this.menu.finishMenu()
-
   }
 }
